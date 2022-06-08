@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+    <title>Gram App</title>
+{% endblock%}
+
+{% block container %}
+    <div class="container">
+        <div class="row">
+
+            {% for post in posts %}
+                {% include 'post/post_card.html' %}
+            {% endfor %}
+        </div>
+    </div>
+    {% include 'pagination.html' %}
+{% endblock %}

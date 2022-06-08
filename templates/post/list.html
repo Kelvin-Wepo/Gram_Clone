@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+
+{% endblock%}
+
+{% block container %}
+    <div class="container">
+        <div class="row">
+
+            {% for post in post %}
+                {% include 'list.html' %}
+            {% endfor %}
+        </div>
+    </div>
+    {% include 'pagination.html' %}
+{% endblock %}
