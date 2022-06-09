@@ -1,4 +1,4 @@
-{% extends "user/base.html" %}
+{% extends "base.html" %}
 
 {% block head_content %}
     <title>Login - Gram App</title>
@@ -6,7 +6,7 @@
 
 {% block container %}
 	{% if form.errors %}
-		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<div class="alert alert-danger alert-dismissible fade show" role="alert" class="w-25">
 			<p>Your username and password didn't match. Please try again.</p>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
     			<span aria-hidden="true">&times;</span>
